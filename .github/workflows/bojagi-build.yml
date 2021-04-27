@@ -1,0 +1,24 @@
+name: Bojagi build workflow
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+
+      - name: Install dependencies
+        run: yarn --pure-lockfile --non-interactive
+
+      - name: Build
+        run: |
+          yarn bojagi build
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: bojagi
+          path: .bojagi/tmp
