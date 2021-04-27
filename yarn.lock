@@ -882,10 +882,10 @@
     "@babel/helper-validator-identifier" "^7.12.11"
     to-fast-properties "^2.0.0"
 
-"@bojagi/cli@^0.16.0":
-  version "0.16.0"
-  resolved "https://registry.yarnpkg.com/@bojagi/cli/-/cli-0.16.0.tgz#a57b7b310a7d7523537d4b645d9f9f1695aa2ff2"
-  integrity sha512-Fla0ifPoxgnuswfwBQV1fkpuMtOOTH2dBm0eEGZ55XxWUmqRkwE/EfT3RDBJYnR7jyz2mp0ShILUOyp4xHC97Q==
+"@bojagi/cli@^0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@bojagi/cli/-/cli-0.16.1.tgz#46f0a49d339e023739a185f2a52712283903cab0"
+  integrity sha512-SPraTwRhFxCQdw0IUkBJKSiwGRCKgEup7LaPJbapOmnpYIhO/Fuv101KDTZoIgu7Ibs38QALHyjRmA1CrEE7cg==
   dependencies:
     "@bojagi/types" "^0.9.0"
     adm-zip "^0.4.13"
