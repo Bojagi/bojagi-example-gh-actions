@@ -52,7 +52,11 @@ jobs:
             fs.writeFileSync('${{github.workspace}}/.bojagi.zip', Buffer.from(download.data));
 
       - name: Decompress .bojagi files
-        run: unzip ./.bojagi.zip -d ./.bojagi/tmp
+        run: |
+          ls
+          mkdir .bojagi
+          mkdir .bojagi/tmp
+          unzip .bojagi.zip -d .bojagi/tmp
 
       - name: Upload
         run: yarn bojagi upload
