@@ -6,7 +6,7 @@ export default {
 };
 
 export const Normal = () =>
-  <Button>Hello</Button>;
+  <Button>Hino</Button>;
 
 export const Outline = () =>
   <Button variant="outline">Goodbye</Button>
